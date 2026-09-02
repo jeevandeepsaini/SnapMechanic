@@ -10,7 +10,7 @@
 </p>
 
 ## 🚀 Overview
-A production-ready Android app for **Instant Mechanic** that lets users browse mechanics, view details, and request vehicle services.
+A production-ready Android app that lets users browse mechanics, view details, and request vehicle services.
 
 ## ✨ Key Features
 - [x] **Home Screen:** Paginated list (5 per page), search filter, pull-to-refresh

@@ -27,28 +27,28 @@ A production-ready Android app for **Instant Mechanic** that lets users browse m
 ## 📸 Screenshots
 <table>
 <tr>
-   <td><img src="" width="250" /></td>
-   <td><img src="" width="250" /></td>
-   <td><img src="" width="250" /></td>
-   <td><img src="" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/SnapMechanic/blob/main/appScreenshots/splashScreen.jpg" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/SnapMechanic/blob/main/appScreenshots/loginScreen.jpg" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/SnapMechanic/blob/main/appScreenshots/signUpScreen.jpg" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/SnapMechanic/blob/main/appScreenshots/resetPasswordDialog.jpg" width="250" /></td>
 </tr>
 <tr>
-   <td><img src="" width="250" /></td>
-   <td><img src="" width="250" /></td>
-   <td><img src="" width="250" /></td>
-   <td><img src="" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/SnapMechanic/blob/main/appScreenshots/homeScreen.jpg" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/SnapMechanic/blob/main/appScreenshots/garageDetail.jpg" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/SnapMechanic/blob/main/appScreenshots/requestService1.jpg" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/SnapMechanic/blob/main/appScreenshots/requestService2.jpg" width="250" /></td>
 </tr>
 <tr>
-   <td><img src="" width="250" /></td>
-   <td><img src="" width="250" /></td>
-   <td><img src="" width="250" /></td>
-   <td><img src="" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/SnapMechanic/blob/main/appScreenshots/bookingConfirmedDialog.jpg" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/SnapMechanic/blob/main/appScreenshots/profileScreen.jpg" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/SnapMechanic/blob/main/appScreenshots/updateProfile.jpg" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/SnapMechanic/blob/main/appScreenshots/myBookings.jpg" width="250" /></td>
 </tr>
 <tr>
-   <td><img src="" width="250" /></td>
-   <td><img src="" width="250" /></td>
-   <td><img src="" width="250" /></td>
-   <td><img src="" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/SnapMechanic/blob/main/appScreenshots/changePassword.jpg" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/SnapMechanic/blob/main/appScreenshots/helpSupportScreen.jpg" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/SnapMechanic/blob/main/appScreenshots/deleteAccountDialog.jpg" width="250" /></td>
+   <td><img src="https://github.com/jeevandeepsaini/SnapMechanic/blob/main/appScreenshots/logoutDialog.jpg" width="250" /></td>
 </tr>
 </table>
 

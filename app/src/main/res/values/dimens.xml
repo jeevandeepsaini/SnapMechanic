@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_4">4dp</dimen>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="space_12">12dp</dimen>
+    <dimen name="space_16">16dp</dimen>
+    <dimen name="space_20">20dp</dimen>
+    <dimen name="space_24">24dp</dimen>
+    <dimen name="space_32">32dp</dimen>
+    <dimen name="space_48">48dp</dimen>
+    <dimen name="space_64">64dp</dimen>
+
+    <dimen name="card_radius">16dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+
+    <dimen name="text_xs">11sp</dimen>
+    <dimen name="text_sm">12sp</dimen>
+    <dimen name="text_base">14sp</dimen>
+    <dimen name="text_md">16sp</dimen>
+    <dimen name="text_lg">18sp</dimen>
+    <dimen name="text_xl">22sp</dimen>
+    <dimen name="text_2xl">26sp</dimen>
+    <dimen name="text_3xl">32sp</dimen>
+
+    <dimen name="garage_image_height">200dp</dimen>
+    <dimen name="card_image_height">160dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="button_height">52dp</dimen>
+    <dimen name="input_height">56dp</dimen>
+    <dimen name="avatar_size">72dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+</resources>

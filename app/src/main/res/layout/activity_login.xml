@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Top spacing -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <!-- Logo + Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔧"
+            android:textSize="56sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="SnapMechanic"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Welcome back! Sign in to continue"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <!-- Email Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilEmail"
+            style="@style/SnapMechanic.TextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            app:startIconDrawable="@drawable/ic_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- Password Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPassword"
+            style="@style/SnapMechanic.TextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/ic_lock">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textPassword"
+                android:textColor="@color/text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Forgot Password -->
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="4dp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/brand_orange"
+            android:textSize="13sp" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_button_gradient"
+            android:fontFamily="@font/poppins_semibold"
+            android:stateListAnimator="@null"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <!-- Loading indicator -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:indeterminateTint="@color/brand_orange"
+            android:visibility="gone" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <!-- Divider -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/divider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="  OR  "
+                android:textColor="@color/text_hint"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/divider" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <!-- Signup prompt -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/dont_have_account"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="4dp"
+                android:text=" Sign Up"
+                android:textColor="@color/brand_orange"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="32dp" />
+
+    </LinearLayout>
+</ScrollView>

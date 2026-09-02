@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/bg_secondary"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_circle"
+                android:contentDescription="Back"
+                android:src="@drawable/ic_arrow_back"
+                android:tint="@color/white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Update Profile"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilName"
+                style="@style/SnapMechanic.TextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/full_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="textPersonName|textCapWords"
+                    android:textColor="@color/text_primary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPhone"
+                style="@style/SnapMechanic.TextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone_number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="phone"
+                    android:textColor="@color/text_primary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCarMake"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/car_make">
+
+                <AutoCompleteTextView
+                    android:id="@+id/etCarMake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="none"
+                    android:textColor="@color/text_primary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCarModel"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/car_model">
+
+                <AutoCompleteTextView
+                    android:id="@+id/etCarModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="none"
+                    android:textColor="@color/text_primary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCarReg"
+                style="@style/SnapMechanic.TextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/car_registration">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCarReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="textCapCharacters"
+                    android:textColor="@color/text_primary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_button_gradient"
+                android:fontFamily="@font/poppins_semibold"
+                android:stateListAnimator="@null"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:indeterminateTint="@color/brand_orange"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

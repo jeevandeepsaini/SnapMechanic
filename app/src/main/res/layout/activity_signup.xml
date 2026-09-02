@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Back arrow + Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_circle"
+                android:contentDescription="Back"
+                android:src="@drawable/ic_arrow_back"
+                android:tint="@color/white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Create Account"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <!-- Section: Personal Info -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:letterSpacing="0.1"
+            android:text="Personal Information"
+            android:textAllCaps="true"
+            android:textColor="@color/brand_orange"
+            android:textSize="13sp" />
+
+        <!-- Full Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilName"
+            style="@style/SnapMechanic.TextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/full_name"
+            app:startIconDrawable="@drawable/ic_person">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textPersonName|textCapWords"
+                android:textColor="@color/text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <!-- Phone Number -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPhone"
+            style="@style/SnapMechanic.TextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone_number"
+            app:startIconDrawable="@drawable/ic_phone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="phone"
+                android:textColor="@color/text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <!-- Email -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilEmail"
+            style="@style/SnapMechanic.TextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            app:startIconDrawable="@drawable/ic_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <!-- Password -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPassword"
+            style="@style/SnapMechanic.TextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/ic_lock">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textPassword"
+                android:textColor="@color/text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <!-- Confirm Password -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilConfirmPassword"
+            style="@style/SnapMechanic.TextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirm_password"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/ic_lock">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textPassword"
+                android:textColor="@color/text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <!-- Section: Vehicle Info -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:letterSpacing="0.1"
+            android:text="Vehicle Information"
+            android:textAllCaps="true"
+            android:textColor="@color/brand_orange"
+            android:textSize="13sp" />
+
+        <!-- Car Make -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilCarMake"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/car_make"
+            app:startIconDrawable="@drawable/ic_car">
+
+            <AutoCompleteTextView
+                android:id="@+id/etCarMake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="none"
+                android:textColor="@color/text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <!-- Car Model -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilCarModel"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/car_model"
+            app:startIconDrawable="@drawable/ic_car">
+
+            <AutoCompleteTextView
+                android:id="@+id/etCarModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="none"
+                android:textColor="@color/text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <!-- Registration Number -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilCarReg"
+            style="@style/SnapMechanic.TextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/car_registration"
+            app:startIconDrawable="@drawable/ic_car">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCarReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textCapCharacters"
+                android:textColor="@color/text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="32dp" />
+
+        <!-- Signup Button -->
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_button_gradient"
+            android:fontFamily="@font/poppins_semibold"
+            android:stateListAnimator="@null"
+            android:text="Create Account"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <!-- Loading -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:indeterminateTint="@color/brand_orange"
+            android:visibility="gone" />
+
+        <!-- Already have account -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/already_have_account"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="4dp"
+                android:text=" Login"
+                android:textColor="@color/brand_orange"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="32dp" />
+    </LinearLayout>
+</ScrollView>

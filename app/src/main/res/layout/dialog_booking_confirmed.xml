@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_chip"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="16dp"
+        android:src="@android:drawable/ic_dialog_info"
+        android:tint="@color/brand_orange" />
+
+    <TextView
+        style="@style/SnapMechanic.Text.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Booking Confirmed!" />
+
+    <TextView
+        style="@style/SnapMechanic.Text.SubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="The mechanic has been notified. Check 'My Bookings' for updates."
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnViewBookings"
+        style="@style/SnapMechanic.Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Bookings" />
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- App Icon / Logo -->
+        <TextView
+            android:id="@+id/tvLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="🔧"
+            android:textSize="72sp"
+            tools:ignore="HardcodedText" />
+
+        <!-- App Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="SnapMechanic"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Tagline -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Your Mechanic, On-Demand"
+            android:textColor="@color/brand_orange"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <!-- Version at bottom -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/version"
+        android:textColor="@color/text_hint"
+        android:textSize="12sp" />
+
+</RelativeLayout>

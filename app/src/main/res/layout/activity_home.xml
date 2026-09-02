@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary"
+    android:fitsSystemWindows="true">
+
+    <!-- Toolbar with search and profile icon -->
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_secondary"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/space_16"
+        android:paddingTop="@dimen/space_16"
+        android:paddingBottom="@dimen/space_12">
+
+        <!-- Row: Search + Profile Icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Search bar -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilSearch"
+                style="@style/SnapMechanic.TextInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/search_garages"
+                app:startIconDrawable="@drawable/ic_search">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:textColor="@color/text_primary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Profile icon -->
+            <ImageButton
+                android:id="@+id/btnProfile"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/bg_circle"
+                android:contentDescription="Profile"
+                android:padding="10dp"
+                android:src="@drawable/ic_person"
+                android:tint="@color/brand_orange" />
+        </LinearLayout>
+
+        <!-- Section Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Nearby Garages"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Main content: SwipeRefresh + RecyclerView -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="136dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvGarages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:padding="@dimen/space_12" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!-- Loading Progress (initial load) -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/brand_orange"
+        android:visibility="gone" />
+
+    <!-- Empty / Error state -->
+    <LinearLayout
+        android:id="@+id/layoutError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="😕"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/tvErrorMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/no_garages"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_button_gradient"
+            android:fontFamily="@font/poppins_semibold"
+            android:stateListAnimator="@null"
+            android:text="@string/retry"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- Bottom loading spinner (pagination) -->
+    <ProgressBar
+        android:id="@+id/progressPagination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:indeterminateTint="@color/brand_orange"
+        android:visibility="gone" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

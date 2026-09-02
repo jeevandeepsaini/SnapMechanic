@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <!-- Background rounded rect manually drawn as a path -->
+    <path
+        android:fillColor="#1E1E30"
+        android:pathData="M16,0 h168 a16,16 0 0 1 16,16 v168 a16,16 0 0 1 -16,16 h-168 a16,16 0 0 1 -16,-16 v-168 a16,16 0 0 1 16,-16 z" />
+    
+    <!-- Roof -->
+    <path
+        android:fillColor="#3A3A5C"
+        android:pathData="M60,140 L80,80 L120,80 L140,140 Z"/>
+        
+    <!-- Circle manually drawn as a path -->
+    <path
+        android:fillColor="#3A3A5C"
+        android:pathData="M 100 45 A 25 25 0 1 1 100 95 A 25 25 0 1 1 100 45"/>
+</vector>

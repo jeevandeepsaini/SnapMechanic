@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_chip"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        style="@style/SnapMechanic.Text.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Logout" />
+
+    <TextView
+        style="@style/SnapMechanic.Text.SubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Are you sure you want to log out?" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/SnapMechanic.Button.Outlined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            style="@style/SnapMechanic.Button.Danger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout" />
+    </LinearLayout>
+</LinearLayout>

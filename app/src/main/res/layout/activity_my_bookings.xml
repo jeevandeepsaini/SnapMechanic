@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/bg_secondary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_circle"
+            android:contentDescription="Back"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_bold"
+            android:text="My Bookings"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Loading -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:indeterminateTint="@color/brand_orange"
+        android:visibility="gone" />
+
+    <!-- Empty state -->
+    <LinearLayout
+        android:id="@+id/layoutEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🚗"
+            android:textSize="56sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/no_bookings"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Bookings list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBookings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="12dp" />
+</LinearLayout>

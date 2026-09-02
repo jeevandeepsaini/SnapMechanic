@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/bg_secondary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_circle"
+            android:contentDescription="Back"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Help &amp; Support"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Support Icon -->
+            <FrameLayout
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="20dp">
+
+                <View
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:background="@drawable/bg_circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="🎧"
+                    android:textSize="40sp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="We're here to help!"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="@font/poppins_regular"
+                android:lineSpacingMultiplier="1.6"
+                android:text="@string/help_message"
+                android:textAlignment="center"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <!-- Contact card -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/SnapMechanic.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:text="✉️"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Email Support"
+                            android:textColor="@color/text_hint"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="@string/developer_email"
+                            android:textColor="@color/brand_orange"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/btnContactEmail"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_button_gradient"
+                android:fontFamily="@font/poppins_semibold"
+                android:stateListAnimator="@null"
+                android:text="@string/contact_us"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

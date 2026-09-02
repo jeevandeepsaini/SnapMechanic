@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/SnapMechanic.Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginVertical="6dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Garage Image -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_image_height">
+
+            <ImageView
+                android:id="@+id/ivGarageImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Garage Image"
+                android:scaleType="centerCrop" />
+
+            <!-- Gradient scrim over image bottom -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_image_scrim" />
+
+            <!-- Open/Closed badge on top-right of image -->
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_badge_open"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:text="● Open"
+                android:textColor="@color/status_open"
+                android:textSize="11sp" />
+
+        </FrameLayout>
+
+        <!-- Card info section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <!-- Garage Name + Rating row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvGarageName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:maxLines="1"
+                    android:text="Garage Name"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <!-- Star + Rating -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:text="⭐"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="4.5"
+                    android:textColor="@color/star_yellow"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4dp" />
+
+            <!-- Distance + Address row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="📍 1.2 km away"
+                    android:textColor="@color/brand_orange"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  ·  "
+                    android:textColor="@color/text_hint"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_regular"
+                    android:maxLines="1"
+                    android:text="123 Main St"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

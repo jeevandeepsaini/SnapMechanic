@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base empty styles to satisfy AAPT implicit parenting -->
+    <style name="SnapMechanic" />
+    <style name="SnapMechanic.Button" />
+    <style name="SnapMechanic.Text" />
+
+    <!-- Base Application Theme -->
+    <style name="Theme.SnapMechanic" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_orange</item>
+        <item name="colorPrimaryVariant">@color/brand_orange_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/brand_red</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:windowBackground">@color/bg_primary</item>
+        <item name="android:statusBarColor">@color/bg_secondary</item>
+        <item name="android:navigationBarColor">@color/bg_primary</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <!-- Splash Theme -->
+    <style name="Theme.SnapMechanic.Splash" parent="Theme.SnapMechanic">
+        <item name="android:windowBackground">@color/bg_secondary</item>
+        <item name="android:statusBarColor">@color/bg_secondary</item>
+    </style>
+
+    <!-- Toolbar Style -->
+    <style name="SnapMechanic.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/bg_secondary</item>
+        <item name="titleTextColor">@color/text_primary</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <!-- Card Style -->
+    <style name="SnapMechanic.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/bg_card</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="strokeColor">@color/stroke</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!-- Button - Primary Orange -->
+    <style name="SnapMechanic.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/brand_orange</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <!-- Button - Outlined -->
+    <style name="SnapMechanic.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/brand_orange</item>
+        <item name="android:textColor">@color/brand_orange</item>
+        <item name="android:textSize">14sp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <!-- Button - Danger Red -->
+    <style name="SnapMechanic.Button.Danger" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/brand_red</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <!-- TextInputLayout Style -->
+    <style name="SnapMechanic.TextInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/bg_input</item>
+        <item name="boxStrokeColor">@color/stroke</item>
+        <item name="hintTextColor">@color/text_hint</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+    </style>
+
+    <!-- Chip Style -->
+    <style name="SnapMechanic.Chip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/bg_surface</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="chipStrokeColor">@color/stroke</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipCornerRadius">20dp</item>
+        <item name="checkedIconVisible">false</item>
+    </style>
+
+    <!-- Text Styles -->
+    <style name="SnapMechanic.Text.Title" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="SnapMechanic.Text.SubTitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SnapMechanic.Text.Label" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- Status Badge - Base -->
+    <style name="SnapMechanic.Badge">
+        <item name="android:textSize">11sp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <!-- Status Badge - Open -->
+    <style name="SnapMechanic.Badge.Open" parent="SnapMechanic.Badge">
+        <item name="android:background">@drawable/bg_badge_open</item>
+        <item name="android:textColor">@color/status_open</item>
+    </style>
+
+    <!-- Status Badge - Closed -->
+    <style name="SnapMechanic.Badge.Closed" parent="SnapMechanic.Badge">
+        <item name="android:background">@drawable/bg_badge_closed</item>
+        <item name="android:textColor">@color/status_closed</item>
+    </style>
+
+</resources>

@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">SnapMechanic</string>
+
+    <!-- Auth Strings -->
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="reset_password">Reset Password</string>
+
+    <!-- Signup Strings -->
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="car_make">Car Make (e.g. Maruti)</string>
+    <string name="car_model">Car Model (e.g. Swift)</string>
+    <string name="car_registration">Car Registration Number</string>
+
+    <!-- Home Strings -->
+    <string name="search_garages">Search garages…</string>
+    <string name="nearby_garages">Nearby Garages</string>
+    <string name="open">Open</string>
+    <string name="closed">Closed</string>
+    <string name="km_away">km away</string>
+    <string name="rating">Rating</string>
+
+    <!-- Garage Detail Strings -->
+    <string name="working_hours">Working Hours</string>
+    <string name="services_offered">Services Offered</string>
+    <string name="request_service">Request Service</string>
+    <string name="call_garage">Call Garage</string>
+
+    <!-- Request Service Strings -->
+    <string name="select_date">Select Date</string>
+    <string name="select_time">Select Time</string>
+    <string name="select_services">Select Services</string>
+    <string name="describe_issue">Describe Your Issue</string>
+    <string name="issue_hint">E.g. Car makes noise while braking…</string>
+    <string name="submit_request">Submit Request</string>
+    <string name="booking_confirmed">Booking Confirmed!</string>
+    <string name="booking_message">Your service has been booked successfully. The garage will contact you shortly.</string>
+
+    <!-- Profile Strings -->
+    <string name="my_profile">My Profile</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="change_password">Change Password</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="logout">Logout</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+
+    <!-- Help Support -->
+    <string name="help_message">Having trouble with SnapMechanic? We\'re here to help! Our support team is available Monday to Friday, 9 AM - 6 PM.\n\nFeel free to reach out to us via email and we\'ll get back to you as soon as possible.</string>
+    <string name="contact_us">Contact Us via Email</string>
+    <string name="developer_email">support@snapmechanic.app</string>
+
+    <!-- Generic -->
+    <string name="loading">Loading…</string>
+    <string name="retry">Retry</string>
+    <string name="no_garages">No garages found</string>
+    <string name="no_bookings">No bookings yet</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="go_home">Go Home</string>
+    <string name="version">Version 1.0.0</string>
+</resources>

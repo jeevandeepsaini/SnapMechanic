@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Hero Image with back button overlay -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+
+            <ImageView
+                android:id="@+id/ivGarageImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Garage Image"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_image_scrim" />
+
+            <!-- Back button -->
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_circle"
+                android:contentDescription="Back"
+                android:src="@drawable/ic_arrow_back"
+                android:tint="@color/white" />
+
+            <!-- Open/Closed badge -->
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="5dp"
+                android:textSize="13sp" />
+        </FrameLayout>
+
+        <!-- Info Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Garage Name + Rating -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvGarageName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Garage Name"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐ "
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/star_yellow"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- Info rows -->
+            <!-- Address -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="📍"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Address"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Phone -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="📞"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="+91 00000 00000"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btnCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:background="@drawable/bg_button_gradient"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:stateListAnimator="@null"
+                    android:text="Call"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- Working Hours -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="🕐"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvWorkingHours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="09:00 – 18:00"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/divider" />
+
+            <!-- Services Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Services Offered"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <!-- Services chips container -->
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupServices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp" />
+
+            <!-- Request Service Button -->
+            <Button
+                android:id="@+id/btnRequestService"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_button_gradient"
+                android:fontFamily="@font/poppins_semibold"
+                android:stateListAnimator="@null"
+                android:text="🔧  Request Service"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <!-- Loading overlay -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/brand_orange"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

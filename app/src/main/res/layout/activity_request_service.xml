@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/bg_secondary"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_circle"
+                android:contentDescription="Back"
+                android:src="@drawable/ic_arrow_back"
+                android:tint="@color/white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Request Service"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Loading overlay -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/brand_orange"
+            android:visibility="gone" />
+
+        <!-- Form Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Section: YOUR VEHICLE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:letterSpacing="0.12"
+                android:text="YOUR VEHICLE"
+                android:textColor="@color/brand_orange"
+                android:textSize="11sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCarMake"
+                style="@style/SnapMechanic.TextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Car Make">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCarMake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/text_primary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCarModel"
+                style="@style/SnapMechanic.TextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Car Model">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCarModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/text_primary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCarReg"
+                style="@style/SnapMechanic.TextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Registration Number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCarReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/text_primary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Section: YOUR DETAILS -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:letterSpacing="0.12"
+                android:text="YOUR DETAILS"
+                android:textColor="@color/brand_orange"
+                android:textSize="11sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilName"
+                style="@style/SnapMechanic.TextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Customer Name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/text_primary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPhone"
+                style="@style/SnapMechanic.TextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/text_primary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Section: APPOINTMENT -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:letterSpacing="0.12"
+                android:text="APPOINTMENT"
+                android:textColor="@color/brand_orange"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Date picker button -->
+                <LinearLayout
+                    android:id="@+id/btnPickDate"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/bg_card"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:text="📅"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Select Date"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <!-- Time picker button -->
+                <LinearLayout
+                    android:id="@+id/btnPickTime"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:background="@color/bg_card"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:text="🕐"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Select Time"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Section: SELECT SERVICES -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:letterSpacing="0.12"
+                android:text="SELECT SERVICES"
+                android:textColor="@color/brand_orange"
+                android:textSize="11sp" />
+
+            <!-- Service chips — populated programmatically from garage data -->
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupServices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Section: DESCRIBE ISSUE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:letterSpacing="0.12"
+                android:text="DESCRIBE ISSUE"
+                android:textColor="@color/brand_orange"
+                android:textSize="11sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilIssue"
+                style="@style/SnapMechanic.TextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/issue_hint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etIssue"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/text_primary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="24dp" />
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_button_gradient"
+                android:fontFamily="@font/poppins_semibold"
+                android:stateListAnimator="@null"
+                android:text="🔧  Submit Request"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

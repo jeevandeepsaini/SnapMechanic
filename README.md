@@ -1,4 +1,3 @@
-<img src="🔧" width="250" />
 <h1 align="center">SnapMechanic</h1>
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Android-green?logo=android"/>

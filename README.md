@@ -1,11 +1,12 @@
+<img src="🔧" width="250" />
 <h1 align="center">SnapMechanic</h1>
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Android-green?logo=android"/>
-  <img src="https://img.shields.io/badge/Code-Kotlin-purple?logo=java"/>
-  <img src="https://img.shields.io/badge/Layout-XML-orange?logo=xml"/>
-  <img src="https://img.shields.io/badge/Backend-Firebase-ffca28?logo=firebase"/>
-  <img src="https://img.shields.io/badge/Database-Firestore-blue?logo=firebase"/>
-  <img src="https://img.shields.io/badge/License-GPLv3-blue.svg"/>
+  <img src="https://img.shields.io/badge/Code-Kotlin-purple?logo=kotlin"/>
+  <img src="https://img.shields.io/badge/Layout-XML-purple?logo=xml"/>
+  <img src="https://img.shields.io/badge/Backend-Firebase-yellow?logo=firebase"/>
+  <img src="https://img.shields.io/badge/API-mockapi.io-orange"/>
+  <img src="https://img.shields.io/badge/Libraries-Retrofit | OkHttp | Gson | Glide-blue"/>
   <img src="https://img.shields.io/github/last-commit/jeevandeepsaini/SnapMechanic"/>
 </p>
 
@@ -63,7 +64,7 @@ A production-ready Android app that lets users browse mechanics, view details, a
 | Database | Firestore (Cloud NoSQL) |
 | Image Loading | Glide |
 | Pagination | Manual scroll listener |
-| Design | Dark theme - #121212 bg, #FF6B35 orange accent |
+| Design | Dark theme <img src="https://img.shields.io/badge/____-121212"/> <img src="https://img.shields.io/badge/____-FF6B35"/> |
 
 ## 🏗️  Project Architecture
 SnapMechanic follows a **simple three-layer architecture**
@@ -83,7 +84,7 @@ UI (Activities)  →  Repository (Data Layer)  →  API / Firebase
 
 **Data Sources** sit at the bottom and are never touched directly by the UI:
 - **MockAPI via Retrofit + Gson**: serves the 20-garage dataset with pagination support
-- **Firebase Authentication** — email/password sign-in, signup, logout, and delete account
+- **Firebase Authentication**: email/password sign-in, signup, logout, and delete account
 - **Firestore**: NoSQL storage for user profiles and bookings, with per-user security rules
 
 ### Why this approach
